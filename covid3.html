@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color: rebeccapurple;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Times New Roman, Times, serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #A10559;
+}
+</style>
+</head>
+<body>
+
+<center><h2 style="color:red;">Featured Movies</h2></center>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>The Testaments</h3>
+      <p>Margaret Atwood</p>
+      <p>422 Pages</p>
+      <a href="https://www.goodreads.com/book/show/42975172-the-testaments?from_choice=true">Synopsis</a>
+      <p></p>
+      <center><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549292344l/42975172.jpg" style="width:52.6%"></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>The Great Gatsby</h3>
+      <p>F. Scott Fitzgerald</p>
+      <p>200 Pages</p>
+      <a href="https://www.youtube.com/watch?v=dNE2PvbesQU"> Synopsis</a>
+      <p></p>
+      <center><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1490528560l/4671._SY475_.jpg" style="width:51.2%"></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>The Crucible</h3>
+      <p>Arthur Miller</p>
+      <p>143 Pages</p>
+      <a href="https://www.youtube.com/watch?v=3JnKU9Stmyw"> Synopsis</a>
+      <p></p>
+      <center><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1547467608l/17250._SY475_.jpg" style="width:53.39%"></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>The Grapes of Wrath</h3>
+      <p>John Steinbeck</p>
+      <p>479 Pages</p>
+      <a href="https://www.youtube.com/watch?v=19Q0yC7ldFk"> Synopsis</a>
+      <p></p>
+      <center><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1375670575l/18114322.jpg" style="width:53%"></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Fahrenheit 451</h3>
+      <p>Ray Bradbury</p>
+      <p>194 Pages</p>
+      <a href="https://www.youtube.com/watch?v=3rVA22f_T_w"> Synopsis</a>
+      <p></p>
+      <center><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1383718290l/13079982.jpg" style="width:50%"></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>A Clockwork Orange</h3>
+      <p>Anthony Burgess</p>
+      <p>240 Pages</p>
+      <a href="https://www.youtube.com/watch?v=3JnKU9Stmyw"> Synopsis</a>
+      <p></p>
+      <center><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549260060l/41817486.jpg" style="width:50%"></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>The Hunger Games</h3>
+      <p>Suzanne Collins</p>
+      <p>374 Pages</p>
+      <a href="https://www.youtube.com/watch?v=3JnKU9Stmyw"> Synopsis</a>
+      <p></p>
+      <center><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586722975l/2767052.jpg" style="width:50%"></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Giovanni's Room</h3>
+      <p>James Baldwin</p>
+      <p>159 Pages</p>
+      <a href="https://www.youtube.com/watch?v=3JnKU9Stmyw"> Synopsis</a>
+      <p></p>
+      <center><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1501485157l/38462._SY475_.jpg" style="width:50%"></center>
+    </div>
+  </div>
+
+</div>
+
+<ul>
+  <li><a href="covid1.html">Categories</a></li>
+  <li><a href="covid2.html">Featured Movies</a></li>
+  <li><a class="active" href="covid3.html">Featured Books</a></li>
+  <li><a href="covid4.html">Subscriptions</a></li>
+</ul>
+
+</div>
+
+
+</body>
+</html>

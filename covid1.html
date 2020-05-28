@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color: #B660CD;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Times New Roman, Times, serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #A10559;
+}
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<center><h2 style="color:red;">Having Trouble Finding a Good Book or Movie?</h2></center>
+
+<ul>
+  <li><a class="active" href="covid1.html">Categories</a></li>
+  <li><a href="covid2.html">Featured Movies</a></li>
+  <li><a href="covid3.html">Featured Books</a></li>
+  <li><a href="covid4.html">Subscriptions</a></li>
+</ul>
+<center>
+<h2 id="demo" style="font-size:100px;"></h2>
+</center>
+<script>
+document.getElementById("demo").innerHTML =
+Math.floor(Math.random() * 10);
+</script>
+<center>
+<table style="width:70%">
+  <tr>
+    <th>Number</th>
+    <th>Genre</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>Action</td>
+    <td><img src="https://www.filmsite.org/images/actionfilms.gif"></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Adventure</td>
+    <td><img src="https://www.filmsite.org/images/adventurefilms.gif"></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Comedy</td>
+    <td><img src="https://www.filmsite.org/images/comedyfilms.gif"></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Crime</td>
+    <td><img src="https://www.filmsite.org/images/crimefilms.gif"></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Drama</td>
+    <td><img src="https://www.filmsite.org/images/dramafilms.gif"></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Epics</td>
+    <td><img src="https://www.filmsite.org/images/epicsfilms.gif"></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Horror</td>
+    <td><img src="https://www.filmsite.org/images/horrorfilms.gif"></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Musicals</td>
+    <td><img src="https://www.filmsite.org/images/MUS05.GIF"></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Science Fiction</td>
+    <td><img src="https://www.filmsite.org/images/sci-fifilms.gif"></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>War</td>
+    <td><img src="https://www.filmsite.org/images/warfilms.gif"></td>
+  </tr>
+</table>
+</center>
+</body>
+</html>

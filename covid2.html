@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color: rebeccapurple;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Times New Roman, Times, serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #A10559;
+}
+</style>
+</head>
+<body>
+
+<center><h2 style="color:red;">Featured Movies</h2></center>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Avengers: Infinity War</h3>
+      <p>2h 40min</p>
+      <p>8.5/10 IMDb</p>
+      <a href="https://www.youtube.com/watch?v=6ZfuNTqbHE8">Watch the Trailer</a>
+      <p></p>
+      <center><img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg" style="width:50%"></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>The Godfather</h3>
+      <p>2h 58min</p>
+      <p>9.2/10 IMDb</p>
+      <a href="https://www.youtube.com/watch?v=dNE2PvbesQU">Watch the Trailer</a>
+      <p></p>
+      <center><img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/iVZ3JAcAjmguGPnRNfWFOtLHOuY.jpg" style="width:50%"></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Finding Nemo</h3>
+      <p>1h 40min</p>
+      <p>8.1/10 IMDb</p>
+      <a href="https://www.youtube.com/watch?v=3JnKU9Stmyw">Watch the Trailer</a>
+      <p></p>
+      <center><img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xVNSgrsvpcAHPnyKf2phYxyppNZ.jpg" style="width:50%"></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Now You See Me 2</h3>
+      <p>2h 10min</p>
+      <p>6.5/10 IMDb</p>
+      <a href="https://www.youtube.com/watch?v=19Q0yC7ldFk">Watch the Trailer</a>
+      <p></p>
+      <center><img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hfFTPAA9CFHN6HGRkWZ6DdgGk8z.jpg" style="width:50%"></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Olympus Has Fallen</h3>
+      <p>2hr</p>
+      <p>6.5/10 IMDb</p>
+      <a href="https://www.youtube.com/watch?v=3rVA22f_T_w">Watch the Trailer</a>
+      <p></p>
+      <center><img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/w7MOYjTvIJm28F4zv85pIZMWaty.jpg" style="width:50%"></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Uncut Gems</h3>
+      <p>2h 15min</p>
+      <p>7.5/10 IMDb</p>
+      <a href="https://www.youtube.com/watch?v=3JnKU9Stmyw">Watch the Trailer</a>
+      <p></p>
+      <center><img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6XN1vxHc7kUSqNWtaQKN45J5x2v.jpg" style="width:50%"></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Moonlight</h3>
+      <p>1h 55min</p>
+      <p>7.4/10 IMDb</p>
+      <a href="https://www.youtube.com/watch?v=3JnKU9Stmyw">Watch the Trailer</a>
+      <p></p>
+      <center><img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/93NN95a71MsQ4tR2zSLv8BNK2qh.jpg" style="width:50%"></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Back to the Future</h3>
+      <p>1h 56min</p>
+      <p>8.5/10 IMDb</p>
+      <a href="https://www.youtube.com/watch?v=3JnKU9Stmyw">Watch the Trailer</a>
+      <p></p>
+      <center><img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/7lyBcpYB0Qt8gYhXYaEZUNlNQAv.jpg" style="width:50%"></center>
+    </div>
+  </div>
+
+</div>
+
+<ul>
+  <li><a href="covid1.html">Categories</a></li>
+  <li><a class="active" href="covid2.html">Featured Movies</a></li>
+  <li><a href="covid3.html">Featured Books</a></li>
+  <li><a href="covid4.html">Subscriptions</a></li>
+</ul>
+
+</div>
+
+
+</body>
+</html>
